@@ -17,7 +17,7 @@
                     {
                       "timeout_ms": 0,
                       "prefix": "/x-default",
-                      "cluster": "default-service-http.kube-system.svc.cluster.local"
+                      "cluster": "default-http-backend.kube-system.svc.cluster.local"
                     }
                   ]
                 }
@@ -41,13 +41,13 @@
   "cluster_manager": {
     "clusters": [
       {
-        "name": "default-service-http.kube-system.svc.cluster.local",
+        "name": "default-http-backend.kube-system.svc.cluster.local",
         "connect_timeout_ms": 250,
         "type": "strict_dns",
         "lb_type": "round_robin",
         "hosts": [
           {
-            "url": "tcp://default-service-http.kube-system.svc.cluster.local:80"
+            "url": "tcp://default-http-backend.kube-system.svc.cluster.local:80"
           }
         ]
       }
