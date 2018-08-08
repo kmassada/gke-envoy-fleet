@@ -16,7 +16,7 @@ spec:
       hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
       nodeSelector:
-        restricted : envoy
+        restricted: envoy
       containers:
         - name: envoy
           image: lyft/envoy:latest
